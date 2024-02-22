@@ -8,6 +8,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.Date;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter
@@ -19,6 +21,7 @@ public class PeliculasDto {
     private String director;
     private String duracion;
     private String genero;
+    private Date fecha;
 
     public Peliculas  getPeliculas(){
         return new Peliculas(
@@ -26,7 +29,8 @@ public class PeliculasDto {
                 getNombre(),
                 getDirector(),
                 getDuracion(),
-                getGenero()
+                getGenero(),
+                getFecha()
         );
     }
 }

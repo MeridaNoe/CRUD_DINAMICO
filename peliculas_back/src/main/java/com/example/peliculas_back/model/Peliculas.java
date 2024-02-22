@@ -7,8 +7,10 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.Date;
+
 @Entity
-@Table(name = "peliculas")
+@Table(name = "movies")
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter
@@ -23,5 +25,5 @@ public class Peliculas {
     private String director;
     private String duracion;
     private String genero;
-
+    private Date fecha;
 }
